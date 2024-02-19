@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Client\Commands\Create\" />
+    <Folder Include="Features\Client\Commands\Delete\" />
+    <Folder Include="Features\Client\Commands\Update\" />
+    <Folder Include="Features\Client\Queries\GetList\" />
+    <Folder Include="Features\Client\Queries\GetDetail\" />
+    <Folder Include="Features\Commande\Commands\Delete\" />
+    <Folder Include="Features\Commande\Commands\Update\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoCQRSMedi.Domain\DemoCQRSMedi.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
